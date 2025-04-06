@@ -4,8 +4,8 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
-#include <D:\Kuliah 4\Grafika Komputer\OpenGLTutorial\OpenGLSetup\shader.h>
-#include <D:\Kuliah 4\Grafika Komputer\OpenGLTutorial\OpenGLSetup\camera.h>
+#include <learnopengl\shader.h>
+#include <learnopengl\camera.h>
 #include <iostream>
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);

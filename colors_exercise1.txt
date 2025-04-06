@@ -5,7 +5,6 @@ lightCubeShader.setFloat("time", glfwGetTime());
 
 Di dalam fragment shader untuk light cube:
 
-
 #version 330 core
 out vec4 FragColor;
 

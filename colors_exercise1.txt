@@ -1,0 +1,19 @@
+Di dalam file CPP:
+
+// agar light cube memiliki efek gelap terang
+lightCubeShader.setFloat("time", glfwGetTime());
+
+Di dalam fragment shader untuk light cube:
+
+
+#version 330 core
+out vec4 FragColor;
+
+uniform float time;
+
+void main()
+{
+    float brightness = sin(time * 2.0) * 0.5 + 0.5; // nilai antara 0.0 sampai 1.0
+    vec3 lightBlue = vec3(0.4, 0.6, 1.0);           // warna biru muda
+    FragColor = vec4(lightBlue * brightness, 1.0);  // efek kedip terang-gelap
+}
